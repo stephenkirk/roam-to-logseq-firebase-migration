@@ -10,12 +10,19 @@ Simple scripts to migrate Firebase-hosted images from Roam Research to local Log
 ## Usage
 
 ```bash
+# Navigate to your Logseq directory and create scripts folder if it doesn't exist
+cd /path/to/your/logseq/graph
+mkdir -p scripts
+
+# Copy these scripts to the scripts folder, then run from there:
+cd scripts
+
 # First download all Firebase assets
-./scripts/download-from-firebase.sh
+./download-from-firebase.sh
 
 # Then replace references in your markdown files
 # (Set DRY_RUN=false in the script when ready)
-./scripts/replace-firebase-urls.sh
+./replace-firebase-urls.sh
 ```
 
 These scripts assume you are running them from a folder `scripts` in your Logseq graph root directory.
