@@ -7,6 +7,8 @@ Simple scripts to migrate Firebase-hosted images from Roam Research to local Log
 1. `download-from-firebase.sh` - Downloads all Firebase images found in your Logseq journals and pages
 2. `replace-firebase-urls.sh` - Replaces Firebase URLs with local asset paths
 
+**Warning:** The `replace-firebase-urls` script creates backup files in your Logseq directory. Close Logseq before running the script or it will throw a fit and yell at you with duplicate file errors, forcing you to reindex your graph. After running, move backup files to a different location or delete them after verifying the script did what you expected.
+
 ## Usage
 
 ```bash
